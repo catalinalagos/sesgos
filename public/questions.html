@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="definitions.js"></script>
+    <script src="functions.js"></script>
+    <script src="sketch1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <title>Sesgos en el lenguaje</title>
+</head>
+
+<body>
+    <!-- <div id="canvasForHTML"></div> -->
+    
+    <form id="regForm" action="/formPost" method="POST">
+
+        
+        <input type="text" value="c" style="display:none" name="type">
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+            <p class="title2">¿Cuál es tu país de nacionalidad?</p>
+            <p><input placeholder="País..." oninput="this.className = ''" name="pais"></p>
+        </div>
+
+        <div class="tab">
+            <p class="title2">Comparte ese comentario o frase que resonó en ti por su sesgo</p>
+            <p class="subtitle">No dejes fuera ningún detalle, ¡estamos aquí para escuchar!</p>
+            <div class="gdr"></div>
+            <textarea name="texto" id="source1" rows="8"> </textarea>
+        </div>
+
+        <div class="tab">
+            <p class="title2">En tu opinión, ¿qué tipo de sesgo representa? </p>
+            <p class="subtitle">Si no estás seguro o segura, no te preocupes. Lo importante es tu experiencia.</p>
+            <select class="select_sesgos" id="sesgos" name="sesgos">
+                <option value="genero">Sesgo de género</option>
+                <option value="edad">Sesgo de edad</option>
+                <option value="raza">Sesgo de raza, etnia o nacionalidad</option>
+                <option value="orientacion_sexual">Sesgo de orientación sexual</option>
+                <option value="religion">Sesgo de religión</option>
+                <option value="socioeconomico">Sesgo socioeconómico</option>
+                <option value="discapacidad">Sesgo de discapacidad</option>
+                <option value="caracteristicas_personales">Sesgo de características personales</option>
+                <option value="violento">Lenguaje violento</option>
+              </select>
+        </div>
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+
+    </form>
+    <script src="multi.js"></script>
+    <script src="listener.js"></script>
+
+</body>
+
+</html>

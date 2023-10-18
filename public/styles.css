@@ -1,0 +1,150 @@
+/* Style the form */
+body {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #201D46;
+    font-family: 'Inclusive Sans', sans-serif;
+    color: #ffffff;
+}
+#regForm {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:400px;
+  }
+  .surveytitle{
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: -10px;
+  }
+  .title2{
+    font-size: 32px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    color: #FDB193;
+    line-height: 1.2em;
+  }
+  .subtitle{
+    margin-top: -10px;
+    font-size: 16px;
+    font-family: 'Inclusive Sans', sans-serif;
+    
+  }
+  textarea{
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Inclusive Sans', sans-serif;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    color: #ffffff;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Inclusive Sans', sans-serif;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 17px;
+    font-family: 'Inclusive Sans', sans-serif;
+    color: #ffffff9b;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 17px;
+    font-family: 'Inclusive Sans', sans-serif;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 17px;
+    font-family: 'Inclusive Sans', sans-serif;
+  }
+  button{
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #AE01FE;
+  }
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #b1040472;
+    
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  .thx {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:400px;
+  }
+  .consent{
+      margin-top: 5px;
+      font-size: 18px;
+      font-family: 'Inclusive Sans', sans-serif;
+      font-weight: 400;
+      
+  }
+  .consent_title{
+    margin-top: 30px;
+    font-size: 21px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    
+}
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #AE01FE;
+  }
+  .select_sesgos{
+    outline: none;
+    padding: 5px;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  .gdr{
+    margin-bottom: 100px;
+  }
+  .gdr2{
+    margin-bottom: 50px;
+  }
